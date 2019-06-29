@@ -1,7 +1,8 @@
 # Edge-aware FCN with CRF-RNN layer
 
-change the model in train.py and eval.py
+change the list of your models in train.py and eval.py
 
+~~~
 modelFns = { 'unet':Models.VanillaUnet.VanillaUnet, 
             'segnet':Models.Segnet.Segnet , 
             'vgg_unet':Models.VGGUnet.VGGUnet , 
@@ -9,10 +10,10 @@ modelFns = { 'unet':Models.VanillaUnet.VanillaUnet,
             'fcn8':Models.FCN8.FCN8, 
             'fcn32':Models.FCN32.FCN32, 
             'crfunet':Models.CRFunet.CRFunet   }
-
+~~~
 
 data hierarchy 
-'''
+~~~
     Use the Keras data generators to load train and test
     Image and label are in structure:
         train/
@@ -27,7 +28,7 @@ data hierarchy
             gt/
                 0/
 
-'''
+~~~
 
 ### Usage
 
