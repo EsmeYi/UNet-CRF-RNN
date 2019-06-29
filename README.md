@@ -1,6 +1,21 @@
-# Edge-aware FCN with CRF-RNN layer
+# Edge-aware U-Net with CRF-RNN layer
 
-change the list of your models in train.py and eval.py
+This project aims at implement 
+
+## Introducion
+
+- The paper of Edge-aware U-Net with CRF-RNN layer
+
+0. [UNet-CRF-RNN]()
+
+- Reference paper:
+
+1. [U-Net]()
+2. [FCN]()
+3. [CRF-RNN]()
+
+
+This repo implemented an edge-aware U-Net with CRF-RNN layer, and also provide some extract models for comparison.
 
 ~~~
 modelFns = { 'unet':Models.VanillaUnet.VanillaUnet, 
@@ -12,7 +27,13 @@ modelFns = { 'unet':Models.VanillaUnet.VanillaUnet,
             'crfunet':Models.CRFunet.CRFunet   }
 ~~~
 
-data hierarchy 
+
+
+## Usage
+
+
+- data hierarchy 
+
 ~~~
     Use the Keras data generators to load train and test
     Image and label are in structure:
@@ -30,20 +51,20 @@ data hierarchy
 
 ~~~
 
-### Usage
-
 - Train your model
-  ```bash
+  ```
   python train.py --data_path ./datasets/ --checkpoint_path ./checkpoints/
   ``` 
 
 - Visualize the train loss, dice score, learning rate, output mask, and first layer convolutional kernels per iteration in tensorboard
-  ```bash
+  ```
   tensorboard tensorboard --logdir=./checkpoints
   ``` 
 
 
 - Evaluate your model
-  ```bash
+  ```
   python eval.py --data_path ./datasets/ --load_from_checkpoint ./checkpoints/model-0
   ```
+ 
+ ## Result
