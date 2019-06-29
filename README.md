@@ -1,6 +1,6 @@
 # Edge-aware U-Net with CRF-RNN layer
 
-This project aims at implement 
+This project aims at improving U-Net for medical images segmentation.
 
 ## Introducion
 
@@ -15,7 +15,7 @@ This project aims at implement
 3. [CRF-RNN]()
 
 
-This repo implemented an edge-aware U-Net with CRF-RNN layer, and also provide some extract models for comparison.
+This repo provides an edge-aware U-Net with CRF-RNN layer, and also provides some extract models for comparison, like SegNet, FCN, vanilla U-Net and so on.
 
 ~~~
 modelFns = { 'unet':Models.VanillaUnet.VanillaUnet, 
