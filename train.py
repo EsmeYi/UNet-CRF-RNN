@@ -1,3 +1,7 @@
+"""
+Training models
+
+"""
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -36,8 +40,6 @@ sess = tf.Session(config=config)
 ''' Users define data loader (with train and test) '''
 img_shape = [opt.imSize, opt.imSize]
 label_classes = vis.palette_info()
-print ('++++++++++++++++++++++++class')
-print (label_classes)
 train_generator, train_samples = dataLoader(opt.data_path+'/train/', opt.batch_size, img_shape, label_classes, mean=dataset_mean, std=dataset_std)
 test_generator, test_samples = dataLoader(opt.data_path+'/val/', 1,  img_shape, label_classes, train_mode=False,mean=dataset_mean, std=dataset_std)
 
