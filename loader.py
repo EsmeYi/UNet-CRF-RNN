@@ -1,3 +1,6 @@
+"""
+Utility of loading data, processing and deprocessing 
+"""
 from data_generator.image import ImageDataGenerator, img_to_array
 import scipy.misc as misc
 import numpy as np
