@@ -1,3 +1,8 @@
+"""
+Models evaluation and performance comparison
+Models: Segnet, Vgg_Unet, FCN, Vanilla Unet, CRF_Unet
+Evaluation metrics: DICE, IoU, meanPixleAccuracy
+"""
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -34,8 +39,6 @@ sess = tf.Session(config=config)
 # define data loader
 img_shape = [opt.imSize, opt.imSize]
 label_classes = vis.palette_info()
-print ('++++++++++++++++++++++++class')
-print (label_classes)
 test_generator, test_samples = dataLoader(opt.data_path+'/val/', 1,  img_shape, label_classes, train_mode=False)
 # define model, the last dimension is the channel
 label = tf.placeholder(tf.float32, shape=[None]+img_shape+[len(label_classes)])
