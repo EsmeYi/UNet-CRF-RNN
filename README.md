@@ -1,4 +1,4 @@
-# U-Net with CRF-RNN layer in tensorflow and keras
+# U-Net with a CRF-RNN layer
 
 This project aims at improving U-Net for medical images segmentation.
 Our model was implemented using Tensorflow and Keras, and the CRF-RNN layer refers to this [repo](https://github.com/sadeepj/crfasrnn_keras/tree/master/src)
