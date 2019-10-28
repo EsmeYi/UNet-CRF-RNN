@@ -7,7 +7,7 @@ Our model was implemented using Tensorflow and Keras, and the CRF-RNN layer refe
 
 - U-Net with CRF-RNN layer paper:
 
-1. [UNet-CRF-RNN]()
+1. [UNet-CRF-RNN](https://ieeexplore.ieee.org/abstract/document/8785801)
 
 - Reference paper:
 
