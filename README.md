@@ -77,7 +77,7 @@ modelFns = {'unet':Models.VanillaUnet.VanillaUnet,
  ## Result
  
  - Dataset
- 1. Hippocampus Segmentation: [ANDI](http://adni.loni.usc.edu) 
+ 1. Hippocampus Segmentation: [ADNI](http://adni.loni.usc.edu) 
  2. Hippocampus Segmentation: [NITRC](https://www.nitrc.org/projects/hippseg_2011/)
  
  - Parameters
